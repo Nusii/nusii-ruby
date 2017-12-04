@@ -25,7 +25,6 @@ module Nusii
         "/api/v2/#{resource_url_string}"
       end
 
-
     end
   end
 end
