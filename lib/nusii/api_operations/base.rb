@@ -2,11 +2,12 @@ module Nusii
   module ApiOperations
     class Base
 
-      attr_reader :resource_class, :resource_id
+      attr_reader :resource_class, :resource_id, :options
 
-      def initialize resource_class, resource_id = nil
+      def initialize resource_class, resource_id = nil, options = {}
         @resource_class = resource_class
         @resource_id    = resource_id
+        @options        = options
       end
 
       def call
