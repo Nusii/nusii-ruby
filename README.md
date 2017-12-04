@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nusii/nusii-ruby.png)](https://travis-ci.org/nusii/nusii-ruby)
+
 # Nusii
 
 Ruby library for the Nusii API.
