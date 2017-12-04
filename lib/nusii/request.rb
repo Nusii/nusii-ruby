@@ -11,6 +11,11 @@ module Nusii
       operator.call
     end
 
+    def nested_index_call resource_class, nested_resource_id, nested_resource, options
+      operator = ApiOperations::NestedIndex.new(resource_class, nested_resource_id, nested_resource, options)
+      operator.call
+    end
+
     def create_call
 
     end
