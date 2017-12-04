@@ -11,5 +11,10 @@ module Nusii
                   :client_country, :client_city, :client_state,
                   :client_web
 
+    def self.get id
+      requester = Nusii::Request.new
+      requester.show_call self, id
+    end
+
   end
 end
