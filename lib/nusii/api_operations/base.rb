@@ -46,7 +46,7 @@ module Nusii
       end
 
       def resource_url_string
-        resource_class.class_name.downcase.pluralize
+        resource_class.class_name.underscore.pluralize
       end
 
       def connection
