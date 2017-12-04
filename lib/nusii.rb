@@ -11,6 +11,7 @@ require 'nusii/api_operations/connection'
 require 'nusii/api_operations/base'
 require 'nusii/api_operations/show'
 require 'nusii/api_operations/index'
+require 'nusii/api_operations/nested_index'
 
 require 'nusii/utils/json_api_builder'
 
