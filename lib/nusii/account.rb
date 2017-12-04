@@ -7,7 +7,7 @@ module Nusii
 
     def self.me
       requester = Nusii::Request.new
-      requester.show_call(Account)
+      requester.show_call self
     end
 
     def self.resource_path
