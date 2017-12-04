@@ -21,7 +21,7 @@ RSpec.describe Nusii::Section do
 
   describe '.list' do
     let(:response_object) { double 'response_object' }
-    let(:options) { 12 }
+    let(:options) { {} }
     let(:requester) { double 'requester' }
 
     it 'relies on the right class' do
