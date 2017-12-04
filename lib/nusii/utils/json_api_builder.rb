@@ -5,7 +5,7 @@ module Nusii
 
       def initialize data, extra
         @is_collection = data.is_a?(Array)
-        @data          = Array[data]
+        @data          = data.is_a?(Array) ? data : [data]
         @extra         = extra
       end
 
