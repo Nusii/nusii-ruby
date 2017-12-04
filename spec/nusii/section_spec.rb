@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Nusii::Proposal do
+RSpec.describe Nusii::Section do
 
   describe '.get' do
     let(:resource_object) { double 'resource_object' }
