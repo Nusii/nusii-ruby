@@ -3,10 +3,12 @@ require 'active_support/core_ext/object/blank'
 require 'active_support/inflector'
 require 'faraday'
 require 'json'
+require 'pry'
 
 require "nusii/version"
 
 require 'nusii/api_operations/connection'
+require 'nusii/api_operations/base'
 require 'nusii/api_operations/show'
 
 require 'nusii/nusii_error'
@@ -14,6 +16,10 @@ require 'nusii/request'
 require 'nusii/resource'
 require 'nusii/account'
 require 'nusii/client'
+require 'nusii/line_item'
+require 'nusii/proposal'
+require 'nusii/proposal_activity'
+require 'nusii/section'
 
 module Nusii
   extend self
