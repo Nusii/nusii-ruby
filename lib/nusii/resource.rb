@@ -13,6 +13,7 @@ module Nusii
 
     def assign_attributes args
       args.each do |attribute, value|
+        value = value.to_i if attribute.match(/\w+\_id$|^id$/)
         instance_variable_set("@#{attribute}", value) unless value.nil?
       end
       self
