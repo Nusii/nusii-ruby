@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nusii/nusii-ruby.png)](https://travis-ci.org/nusii/nusii-ruby)
+[![Build Status](https://travis-ci.org/Nusii/nusii-ruby.png)](https://travis-ci.org/Nusii/nusii-ruby)
 
 # Nusii
 
