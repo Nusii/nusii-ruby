@@ -6,5 +6,15 @@ module Nusii
                   :amount_in_cents, :amount_formatted, :total_in_cents,
                   :total_formatted, :updated_at, :created_at
 
+    def self.list options={}
+      requester = Nusii::Request.new
+      requester.index_call self, options
+    end
+
+    def self.list_by_section section_id, options={}
+      requester = Nusii::Request.new
+      requester.nested_index_call self, section_id, Nusii::Section, options
+    end
+
   end
 end

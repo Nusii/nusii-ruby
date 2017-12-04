@@ -1,0 +1,39 @@
+require 'spec_helper'
+
+RSpec.describe Nusii::LineItem do
+
+  describe '.list' do
+    let(:response_object) { double 'response_object' }
+    let(:options) { {} }
+    let(:requester) { double 'requester' }
+
+    it 'relies on the right class' do
+      expect(Nusii::Request).to receive(:new).
+        and_return requester
+
+      expect(requester).to receive(:index_call).
+        with(described_class, options).and_return response_object
+
+      expect(described_class.list(options)).to eq response_object
+    end
+  end
+
+  describe '.list_by_section' do
+    let(:response_object) { double 'response_object' }
+    let(:options) { {} }
+    let(:section_id) { 54 }
+    let(:requester) { double 'requester' }
+
+    it 'relies on the right class' do
+      expect(Nusii::Request).to receive(:new).
+        and_return requester
+
+      expect(requester).to receive(:nested_index_call).
+        with(described_class, section_id, Nusii::Section, options).
+        and_return response_object
+
+      expect(described_class.list_by_section(section_id)).to eq response_object
+    end
+  end
+
+end
