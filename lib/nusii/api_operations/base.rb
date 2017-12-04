@@ -45,7 +45,7 @@ module Nusii
       end
 
       def resource_url_string
-        resource_class.to_s.split('::').last.downcase.pluralize
+        resource_class.class_name.downcase.pluralize
       end
 
       def connection
