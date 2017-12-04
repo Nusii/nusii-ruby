@@ -11,6 +11,10 @@ module Nusii
       requester.show_call self, id
     end
 
+    def self.list options={}
+      requester = Nusii::Request.new
+      requester.index_call self, options
+    end
 
   end
 end
