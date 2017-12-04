@@ -3,9 +3,10 @@ require 'spec_helper'
 RSpec.describe Nusii::ApiOperations::Show do
 
   let(:resource_class) { Nusii::Account }
+  let(:options)     { {} }
   let(:resource_id) { nil }
 
-  subject { described_class.new resource_class, resource_id }
+  subject { described_class.new resource_class, options, resource_id }
 
   describe '#resource_path' do
     context 'class has its own' do
