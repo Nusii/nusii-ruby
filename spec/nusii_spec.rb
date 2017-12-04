@@ -16,4 +16,14 @@ RSpec.describe Nusii do
       expect(Nusii.api_key).to eq api_key
     end
   end
+
+  describe 'client_name' do
+    let(:client_name) { 'Big Company' }
+
+    it "has an client_name" do
+      expect(Nusii.client_name).to be_nil
+      Nusii.client_name = client_name
+      expect(Nusii.client_name).to eq client_name
+    end
+  end
 end
