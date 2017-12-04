@@ -11,6 +11,8 @@ require 'nusii/api_operations/connection'
 require 'nusii/api_operations/base'
 require 'nusii/api_operations/show'
 
+require 'nusii/utils/json_api_builder'
+
 require 'nusii/nusii_error'
 require 'nusii/request'
 require 'nusii/resource'
