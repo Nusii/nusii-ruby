@@ -5,12 +5,12 @@ module Nusii
     private
 
       def response
-        @response ||= connection.get resource_path
+        @response ||= connection.get resource_path, options
       end
 
       def build_ok_response
         builder = Utils::JsonApiBuilder.new(parsed_body['data'], parsed_body['included'])
-        builder.class
+        builder.call
       end
 
       def resource_path
