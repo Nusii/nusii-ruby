@@ -9,7 +9,8 @@ module Nusii
       end
 
       def build_ok_response
-        resource_class.new resource_attributes
+        builder = Utils::JsonApiBuilder.new(parsed_body['data'], parsed_body['included'])
+        builder.class
       end
 
       def resource_path
@@ -17,12 +18,6 @@ module Nusii
         "/api/v2/#{resource_url_string}/#{resource_id}"
       end
 
-      def resource_attributes
-        body = parsed_body['data']['attributes']
-        body.tap do |attributes|
-          attributes['id'] = parsed_body['data']['id']
-        end
-      end
 
     end
   end

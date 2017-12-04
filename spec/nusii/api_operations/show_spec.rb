@@ -24,32 +24,4 @@ RSpec.describe Nusii::ApiOperations::Show do
     end
   end
 
-  describe 'build_ok_response' do
-    let(:id) { 3 }
-    let(:email) { "hello@your_company.com" }
-
-    let(:parsed_body) do
-      {
-        "data" => {
-          "id" => id,
-          "type" => "accounts",
-          "attributes" => {
-            "email" => email,
-          }
-        }
-      }
-    end
-
-    before do
-      allow(subject).to receive(:parsed_body).and_return parsed_body
-    end
-
-    it 'build a resource object with the retrieved data' do
-      resource = subject.send(:build_ok_response)
-
-      expect(resource.id).to eq id
-      expect(resource.email).to eq email
-      expect(resource.locale).to be_nil
-    end
-  end
 end
