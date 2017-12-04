@@ -10,11 +10,13 @@ require "nusii/version"
 require 'nusii/api_operations/connection'
 require 'nusii/api_operations/base'
 require 'nusii/api_operations/show'
+require 'nusii/api_operations/index'
 
 require 'nusii/utils/json_api_builder'
 
 require 'nusii/nusii_error'
 require 'nusii/request'
+require 'nusii/response_object'
 require 'nusii/resource'
 require 'nusii/account'
 require 'nusii/client'
