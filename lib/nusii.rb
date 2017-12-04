@@ -1,9 +1,29 @@
+require 'active_support/core_ext/module/delegation'
+require 'active_support/core_ext/object/blank'
+require 'active_support/inflector'
+require 'faraday'
+require 'json'
+
 require "nusii/version"
+
+require 'nusii/api_operations/connection'
+require 'nusii/api_operations/show'
+
+require 'nusii/nusii_error'
+require 'nusii/request'
+require 'nusii/resource'
+require 'nusii/account'
+require 'nusii/client'
 
 module Nusii
   extend self
 
   class << self
-    attr_accessor :api_key, :client_name
+    attr_accessor :api_key, :user_agent
+
+    def setup params
+      @api_key     = params[:api_key]
+      @user_agent  = params[:user_agent]
+    end
   end
 end

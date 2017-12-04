@@ -7,23 +7,19 @@ RSpec.describe Nusii do
     end
   end
 
-  describe 'api_key' do
-    let(:api_key) { 'thisismyapikey' }
+  let(:user_agent) { 'Big Company' }
+  let(:api_key) { 'thisismyapikey' }
 
-    it "has an api_key" do
+  describe '.setup' do
+    it 'add the params' do
       expect(Nusii.api_key).to be_nil
-      Nusii.api_key = api_key
+      expect(Nusii.user_agent).to be_nil
+
+      Nusii.setup :api_key => api_key, :user_agent => user_agent
+
       expect(Nusii.api_key).to eq api_key
+      expect(Nusii.user_agent).to eq user_agent
     end
   end
 
-  describe 'client_name' do
-    let(:client_name) { 'Big Company' }
-
-    it "has an client_name" do
-      expect(Nusii.client_name).to be_nil
-      Nusii.client_name = client_name
-      expect(Nusii.client_name).to eq client_name
-    end
-  end
 end
