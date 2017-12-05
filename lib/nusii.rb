@@ -41,7 +41,8 @@ module Nusii
   extend self
 
   class << self
-    attr_accessor :api_key, :user_agent
+    attr_accessor :api_key, :user_agent,
+                  :rate_limit_remaining, :rate_limit_retry_after
 
     def setup params
       @api_key     = params[:api_key]

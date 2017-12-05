@@ -4,9 +4,9 @@ module Nusii
 
       def call
         if [200, 201].include?(response.status)
-          build_ok_response
+          update_rate_limit && build_ok_response
         else
-          raise_error_response
+          update_rate_limit && raise_error_response
         end
       end
 
@@ -27,6 +27,11 @@ module Nusii
           "Each subclass must implement this method"
       end
 
+      def update_rate_limit
+        Nusii.rate_limit_remaining   = headers["x-ratelimit-remaining"].to_i
+        Nusii.rate_limit_retry_after = headers["x-ratelimit-retry-after"].to_i
+      end
+
       def raise_error_response
         current_error = NusiiError.error_for(status)
 
@@ -45,7 +50,7 @@ module Nusii
         @connection ||= Connection.new
       end
 
-      delegate :status, :body, :reason_phrase,
+      delegate :status, :body, :reason_phrase, :headers,
                :to => :response
 
     end
