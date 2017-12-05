@@ -27,7 +27,7 @@ RSpec.describe Nusii::Resource do
 
   subject { klass.new(params) }
 
-  describe '#create_params' do
+  describe '#editable_params' do
     let(:expected_output) do
       {
         'name' => name,
@@ -37,11 +37,11 @@ RSpec.describe Nusii::Resource do
     end
 
     it 'returns the expected output' do
-      expect(subject.create_params).to eq expected_output
+      expect(subject.editable_params).to eq expected_output
     end
   end
 
-  describe '#update_params' do
+  describe '#save_params' do
     let(:expected_output) do
       {
         'friend' => {
@@ -53,7 +53,7 @@ RSpec.describe Nusii::Resource do
     end
 
     it 'returns the expected output' do
-      expect(subject.update_params).to eq expected_output
+      expect(subject.save_params).to eq expected_output
     end
   end
 

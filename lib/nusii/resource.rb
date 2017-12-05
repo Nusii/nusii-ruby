@@ -9,15 +9,15 @@ module Nusii
       name.split("::").last
     end
 
-    def create_params
+    def editable_params
       editable_attributes.each_with_object({}) do |attribute, result|
         result[attribute.to_s] = self.send(attribute)
       end
     end
 
-    def update_params
+    def save_params
       {
-        self.class.class_name.underscore.singularize => create_params
+        self.class.class_name.underscore.singularize => editable_params
       }
     end
 
