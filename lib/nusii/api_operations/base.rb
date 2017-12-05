@@ -2,14 +2,6 @@ module Nusii
   module ApiOperations
     class Base
 
-      attr_reader :resource_class, :options, :resource_id
-
-      def initialize resource_class, options={}, resource_id=nil
-        @resource_class = resource_class
-        @options        = options
-        @resource_id    = resource_id
-      end
-
       def call
         if response.status == 200
           build_ok_response

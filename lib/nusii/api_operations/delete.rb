@@ -2,6 +2,14 @@ module Nusii
   module ApiOperations
     class Delete < Base
 
+      attr_reader :resource_class, :resource_id, :options
+
+      def initialize resource_class, resource_id, options={}
+        @resource_class = resource_class
+        @resource_id    = resource_id
+        @options        = options
+      end
+
     private
 
       def response

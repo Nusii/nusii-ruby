@@ -2,6 +2,13 @@ module Nusii
   module ApiOperations
     class Index < Base
 
+      attr_reader :resource_class, :options
+
+      def initialize resource_class, options={}
+        @resource_class = resource_class
+        @options        = options
+      end
+
     private
 
       def response
