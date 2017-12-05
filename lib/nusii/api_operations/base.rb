@@ -3,7 +3,7 @@ module Nusii
     class Base
 
       def call
-        if response.status == 200
+        if [200, 201].include?(response.status)
           build_ok_response
         else
           raise_error_response

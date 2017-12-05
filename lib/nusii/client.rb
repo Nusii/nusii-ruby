@@ -10,7 +10,7 @@ module Nusii
     attr_accessor :id, :email, :name, :surname, :full_name,
                   :currency, :business, :locale, :pdf_page_size,
                   :web, :telephone, :address, :city, :postcode,
-                  :country, :city
+                  :country, :city, :state
 
   private
 

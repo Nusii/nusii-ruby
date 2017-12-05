@@ -13,7 +13,7 @@ module Nusii
         conn.adapter :net_http
         conn.headers['Authorization'] = "Token token=#{Nusii.api_key}"
         conn.headers['User-Agent']     = Nusii.user_agent
-        conn.headers['Content-Type']  = 'application/vnd.api+json'
+        conn.headers['Content-Type']  = 'application/json'
       end
     end
 

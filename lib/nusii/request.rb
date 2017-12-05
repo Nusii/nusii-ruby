@@ -17,11 +17,13 @@ module Nusii
     end
 
     def create_call resource_class, resource
-
+      operator = ApiOperations::Create.new(resource_class, resource)
+      operator.call
     end
 
     def update_call resource_class, resource
-
+      operator = ApiOperations::Update.new(resource_class, resource)
+      operator.call
     end
 
     def delete_call resource_class, resource_id, options={}
