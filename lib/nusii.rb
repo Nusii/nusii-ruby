@@ -12,9 +12,12 @@ require 'nusii/api_operations/base'
 require 'nusii/api_operations/show'
 require 'nusii/api_operations/index'
 require 'nusii/api_operations/nested_index'
+require 'nusii/api_operations/delete'
 
 require 'nusii/crud/get'
 require 'nusii/crud/list'
+require 'nusii/crud/destroy'
+require 'nusii/crud/destroy_self'
 
 require 'nusii/utils/json_api_builder'
 

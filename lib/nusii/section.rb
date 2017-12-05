@@ -2,6 +2,8 @@ module Nusii
   class Section < Resource
     extend Nusii::Crud::Get
     extend Nusii::Crud::List
+    extend Nusii::Crud::Destroy
+    include Nusii::Crud::DestroySelf
 
     attr_accessor :id, :currency, :account_id, :proposal_id,
                   :template_id, :title, :name, :body, :position,

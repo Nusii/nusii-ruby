@@ -6,12 +6,12 @@ module Nusii
       operator.call
     end
 
-    def index_call resource_class, options
+    def index_call resource_class, options={}
       operator = ApiOperations::Index.new(resource_class, options)
       operator.call
     end
 
-    def nested_index_call resource_class, nested_resource_id, nested_resource, options
+    def nested_index_call resource_class, nested_resource_id, nested_resource, options={}
       operator = ApiOperations::NestedIndex.new(resource_class, nested_resource_id, nested_resource, options)
       operator.call
     end
@@ -24,10 +24,10 @@ module Nusii
 
     end
 
-    def delete_call
-
+    def delete_call resource_class, resource_id, options={}
+      operator = ApiOperations::Delete.new(resource_class, options, resource_id)
+      operator.call
     end
-
 
   end
 end

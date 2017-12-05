@@ -1,6 +1,8 @@
 module Nusii
   class LineItem < Resource
     extend Nusii::Crud::List
+    extend Nusii::Crud::Destroy
+    include Nusii::Crud::DestroySelf
 
     attr_accessor :id, :section_id, :name, :position, :cost_type,
                   :recurring_type, :per_type, :quantity, :currency,
