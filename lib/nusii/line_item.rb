@@ -1,6 +1,8 @@
 module Nusii
   class LineItem < Resource
     extend Nusii::Crud::List
+    extend Nusii::Crud::Create
+    include Nusii::Crud::Save
     extend Nusii::Crud::Destroy
     include Nusii::Crud::DestroySelf
 

@@ -16,6 +16,8 @@ require 'nusii/api_operations/delete'
 
 require 'nusii/crud/get'
 require 'nusii/crud/list'
+require 'nusii/crud/create'
+require 'nusii/crud/save'
 require 'nusii/crud/destroy'
 require 'nusii/crud/destroy_self'
 
