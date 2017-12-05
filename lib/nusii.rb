@@ -13,6 +13,9 @@ require 'nusii/api_operations/show'
 require 'nusii/api_operations/index'
 require 'nusii/api_operations/nested_index'
 
+require 'nusii/crud/get'
+require 'nusii/crud/list'
+
 require 'nusii/utils/json_api_builder'
 
 require 'nusii/nusii_error'

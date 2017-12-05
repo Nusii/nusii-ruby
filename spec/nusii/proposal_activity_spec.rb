@@ -5,6 +5,7 @@ RSpec.describe Nusii::ProposalActivity do
   describe '.get' do
     let(:resource_object) { double 'resource_object' }
     let(:resource_id) { 12 }
+    let(:options) { {} }
     let(:requester) { double 'requester' }
 
     it 'relies on the right class' do
@@ -12,7 +13,7 @@ RSpec.describe Nusii::ProposalActivity do
         and_return requester
 
       expect(requester).to receive(:show_call).
-        with(described_class, resource_id).and_return resource_object
+        with(described_class, resource_id, options).and_return resource_object
 
       expect(described_class.get(resource_id)).to eq resource_object
     end
