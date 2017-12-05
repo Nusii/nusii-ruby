@@ -11,5 +11,13 @@ module Nusii
                   :page_break, :optional, :selected, :include_total,
                   :total_in_cents, :total_formatted, :line_items
 
+  private
+
+    def editable_attributes
+      [ :proposal_id, :template_id, :title, :body,
+        :name, :position, :reusable, :section_type,
+        :page_break, :optional, :include_total ]
+    end
+
   end
 end

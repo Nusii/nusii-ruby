@@ -14,5 +14,12 @@ module Nusii
       requester.nested_index_call self, section_id, Nusii::Section, options
     end
 
+  private
+
+    def editable_attributes
+      [ :name, :cost_type, :recurring_type, :per_type,
+        :position, :quantity, :amount ]
+    end
+
   end
 end

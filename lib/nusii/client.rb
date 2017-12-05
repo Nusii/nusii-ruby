@@ -10,5 +10,13 @@ module Nusii
                   :web, :telephone, :address, :city, :postcode,
                   :country, :city
 
+  private
+
+    def editable_attributes
+      [ :email, :name, :surname, :currency, :business,
+        :locale, :pdf_page_size, :web, :telephone, :address,
+        :city, :postcode, :country, :state ]
+    end
+
   end
 end
