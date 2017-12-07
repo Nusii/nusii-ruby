@@ -11,7 +11,7 @@ RSpec.describe Nusii::ApiOperations::NestedIndex do
 
   describe '#resource_path' do
     it 'returns the right path' do
-      expect(subject.send(:resource_path)).to eq "/api/v2/sections/12/line_items/"
+      expect(subject.send(:resource_path)).to eq "/api/v2/sections/12/line_items"
     end
   end
 
