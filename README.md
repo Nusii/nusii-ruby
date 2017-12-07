@@ -4,6 +4,21 @@
 
 Ruby library for the [Nusii API](https://developer.nusii.com/#get-all-webhook-endpoints)
 
+## Table of contents
+
+  * [Installation](#installation)
+  * [Setup](#setup)
+  * [Usage](#usage)
+    * [Account](#account)
+    * [Clients](#clients)
+    * [Sections](#sections)
+    * [Line Items](#line-items)
+    * [Proposals](#proposals)
+    * [Proposal Activities](#proposal-activities)
+    * [Webhooks](#webhooks)
+  * [Contributing](#contributing)
+  * [Usage](#contributing)
+
 ## Installation
 
 To get the latest stable, add this to your Gemfile:
