@@ -51,6 +51,27 @@ Nusii.setup(:api_key => 'YOUR_API_KEY', :user_agent => 'your_user_agent')
 
 ### Account
 
+#### Account.me
+
+```ruby
+# Use this to retrieve the information from your account:
+
+> Nusii::Account.me
+=> #<Nusii::Account:0x007fb042f30350
+ @address="Calle Ferraz 37, Madrid",
+ @city="Madrid",
+ @country="Spain",
+ @country_name="Netherlands",
+ @currency="EUR",
+ @email="michael@nusii.com",
+ @id=44,
+ @name="Nusii",
+ @postcode="28017",
+ @subdomain="michael",
+ @telephone="123456789",
+ @web="nusii.com">
+```
+
 ### Clients
 
 ### Sections
