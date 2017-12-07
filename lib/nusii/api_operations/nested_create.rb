@@ -14,6 +14,10 @@ module Nusii
 
     private
 
+      def response
+        @response ||= connection.post resource_path, params.to_json
+      end
+
       def resource_path
         "/api/v2/#{nested_resource_url_string}/#{nested_resource_id}/#{resource_url_string}"
       end
