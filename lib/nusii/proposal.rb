@@ -7,12 +7,14 @@ module Nusii
     extend Nusii::Crud::Destroy
     include Nusii::Crud::DestroySelf
 
-    attr_accessor :id, :account_id, :status, :public_id,
+    attr_accessor :id, :account_id, :status, :public_id, :title,
                   :prepared_by_id, :client_id, :client_email,
                   :sender_id, :document_section_title,
-                  :prepared_by_id, :expires_at, :sections
+                  :expires_at, :display_date, :report,
+                  :exclude_total, :exclude_total_in_pdf, :theme,
+                  :sections
 
-    def send params
+    def send_proposal params
       requester = Nusii::Request.new
       requester.send_call self.class, self, params
     end
@@ -21,7 +23,7 @@ module Nusii
 
     def editable_attributes
       [ :title, :client_id, :client_email, :document_section_title,
-        :prepared_by_id, :expires_at, :expires_at, :display_date,
+        :prepared_by_id, :expires_at, :display_date,
         :report, :exclude_total, :exclude_total_in_pdf, :theme ]
     end
 

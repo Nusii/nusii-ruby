@@ -20,7 +20,7 @@ RSpec.describe Nusii::Proposal do
         with(described_class, subject, send_params).
         and_return status
 
-      expect(subject.send(send_params)).to eq status
+      expect(subject.send_proposal(send_params)).to eq status
     end
   end
 
