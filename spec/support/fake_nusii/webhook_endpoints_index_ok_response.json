@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "26",
+      "type": "webhook_endpoints",
+      "attributes": {
+        "events": [
+          "proposal_created",
+          "client_updated"
+        ],
+        "target_url": "http://example.com/webhooks"
+      }
+    }
+  ],
+  "meta": {
+    "current-page": 2,
+    "next-page": 3,
+    "prev-page": 1,
+    "total-pages": 4,
+    "total-count": 89
+  }
+}

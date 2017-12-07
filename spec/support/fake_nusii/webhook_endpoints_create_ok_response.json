@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": "34",
+    "type": "webhook_endpoints",
+    "attributes": {
+      "events": [
+        "proposal_created",
+        "client_created"
+      ],
+      "target_url": "http://example.com"
+    }
+  }
+}
