@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": "3",
+    "type": "accounts",
+    "attributes": {
+      "email": "hello@your_company.com",
+      "name": "Your Company Name",
+      "subdomain": "your_company",
+      "web": "www.your_company.com",
+      "currency": "USD",
+      "pdf_page_size": "A4",
+      "locale": "en",
+      "address": "Your Street Address 50",
+      "address_state": "New York",
+      "postcode": "10022",
+      "city": "New York",
+      "telephone": "1234567890",
+      "default_theme": "clean"
+    }
+  }
+}
