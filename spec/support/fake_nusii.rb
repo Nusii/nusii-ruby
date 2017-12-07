@@ -11,6 +11,10 @@ class FakeNusii < Sinatra::Base
     json_response 200, 'line_items_nested_index_ok_response.json'
   end
 
+  post '/api/v2/sections/:id/line_items' do
+    json_response 201, "line_items_nested_create_ok_response.json"
+  end
+
   # Proposals
   post '/api/v2/proposals/:id/send_proposal' do
     json_response 201, "proposals_send_proposal_ok_response.json"
