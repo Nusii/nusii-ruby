@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "id": "12",
+      "type": "clients",
+      "attributes": {
+        "email": "support@nusii.com",
+        "name": "Michael",
+        "surname": "Koper",
+        "full_name": "Michael Koper",
+        "currency": "EUR",
+        "business": "Michael Koper BV",
+        "locale": "nl",
+        "pdf_page_size": "A4",
+        "web": "www.michaelkoper.com",
+        "telephone": "1234567890",
+        "address": "Madrid Street 34",
+        "city": "Madrid",
+        "postcode": "28018",
+        "country": "Spain",
+        "state": "Madrid"
+      }
+    },
+    {
+      "id": "14",
+      "type": "clients",
+      "attributes": {
+        "email": "test@test.com",
+        "name": "Victor",
+        "surname": "Martin",
+        "full_name": "Victor Martin",
+        "currency": "EUR"
+      }
+    }
+  ],
+  "meta": {
+    "current-page": 1,
+    "next-page": null,
+    "prev-page": null,
+    "total-pages": 1,
+    "total-count": 2
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "id": "104",
+    "type": "clients",
+    "attributes": {
+      "email": "john@doe.com",
+      "name": "John",
+      "surname": "Doe",
+      "full_name": "John Doe",
+      "currency": "EUR",
+      "business": "Michael Koper BV",
+      "locale": "en",
+      "pdf_page_size": "A4",
+      "web": "www.michaelkoper.com",
+      "telephone": "1234567890",
+      "address": "Madrid Street 34",
+      "city": "Madrid",
+      "postcode": "28018",
+      "country": "Spain",
+      "state": "Madrid"
+    }
+  }
+}

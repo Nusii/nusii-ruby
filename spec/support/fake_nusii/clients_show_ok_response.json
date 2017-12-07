@@ -1,0 +1,23 @@
+{
+  "data": {
+    "id": "4",
+    "type": "clients",
+    "attributes": {
+      "email": "support@nusii.com",
+      "name": "Michael",
+      "surname": "Koper",
+      "full_name": "Michael Koper",
+      "currency": "EUR",
+      "business": "Michael Koper BV",
+      "locale": "nl",
+      "pdf_page_size": "A4",
+      "web": "www.michaelkoper.com",
+      "telephone": "1234567890",
+      "address": "Madrid Street 34",
+      "city": "Madrid",
+      "postcode": "28018",
+      "country": "Spain",
+      "state": "Madrid"
+    }
+  }
+}
