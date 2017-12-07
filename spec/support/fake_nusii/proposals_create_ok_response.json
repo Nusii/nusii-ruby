@@ -1,0 +1,25 @@
+{
+  "data": {
+    "id": "126",
+    "type": "proposals",
+    "attributes": {
+      "title": "Webdesign yourwebsite.com",
+      "account_id": 3,
+      "status": "draft",
+      "public_id": "-NqDAkiqpiFLuuw",
+      "prepared_by_id": 3,
+      "client_id": 5,
+      "sender_id": null
+    },
+    "relationships": {
+      "sections": {
+        "data": [
+          {
+            "id": "414",
+            "type": "sections"
+          }
+        ]
+      }
+    }
+  }
+}
