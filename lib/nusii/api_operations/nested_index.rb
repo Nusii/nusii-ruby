@@ -15,7 +15,7 @@ module Nusii
     private
 
       def resource_path
-        "/api/v2/#{nested_resource_url_string}/#{nested_resource_id}/#{resource_url_string}/"
+        "/api/v2/#{nested_resource_url_string}/#{nested_resource_id}/#{resource_url_string}"
       end
 
       def nested_resource_url_string
