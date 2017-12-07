@@ -12,6 +12,11 @@ module Nusii
                   :sender_id, :document_section_title,
                   :prepared_by_id, :expires_at, :sections
 
+    def send params
+      requester = Nusii::Request.new
+      requester.send_call self.class, self, params
+    end
+
   private
 
     def editable_attributes
