@@ -21,6 +21,11 @@ module Nusii
       operator.call
     end
 
+    def nested_create_call resource_class, nested_resource_id, nested_resource_class, params
+      operator = ApiOperations::NestedCreate.new(resource_class, nested_resource_id, nested_resource_class, params)
+      operator.call
+    end
+
     def update_call resource_class, resource
       operator = ApiOperations::Update.new(resource_class, resource)
       operator.call
