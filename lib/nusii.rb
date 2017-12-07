@@ -15,6 +15,7 @@ require 'nusii/api_operations/create'
 require 'nusii/api_operations/update'
 require 'nusii/api_operations/nested_index'
 require 'nusii/api_operations/delete'
+require 'nusii/api_operations/send'
 
 require 'nusii/crud/get'
 require 'nusii/crud/list'

@@ -31,5 +31,10 @@ module Nusii
       operator.call
     end
 
+    def send_call resource_class, resource, params
+      operator = ApiOperations::Send.new(resource_class, resource, params)
+      operator.call
+    end
+
   end
 end
