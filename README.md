@@ -58,14 +58,14 @@ Nusii.setup(:api_key => 'YOUR_API_KEY', :user_agent => 'your_user_agent')
 
 > Nusii::Account.me
 => #<Nusii::Account:0x007fb042f30350
- @address="Calle Ferraz 37, Madrid",
+ @address="Calle Mayor, 23",
  @city="Madrid",
  @country="Spain",
- @country_name="Netherlands",
+ @country_name="Spain",
  @currency="EUR",
- @email="michael@nusii.com",
+ @email="michael@test.com",
  @id=44,
- @name="Nusii",
+ @name="Michael Account",
  @postcode="28017",
  @subdomain="michael",
  @telephone="123456789",
