@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe "LineItem.save" do
 
-  it 'builds an LineItem object with the retrieved info' do
+  it 'updates a LineItem' do
     line_item = Nusii::LineItem.new(:id => 157, :name => 'Prub')
 
     line_item.name = "Prueba"
