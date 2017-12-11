@@ -11,12 +11,18 @@ module Nusii
 
     def next_page
       raise(ArgumentError, "That page does no exist") if meta['next_page'] == nil
-      resource_class.list(:page => meta['next_page'])
+      resource_class.list(:page => meta['next_page'], :per => per_page)
     end
 
     def prev_page
       raise(ArgumentError, "That page does no exist") if meta['prev_page'] == nil
-      resource_class.list(:page => meta['prev_page'])
+      resource_class.list(:page => meta['prev_page'], :per => per_page)
+    end
+
+  private
+
+    def per_page
+      (meta['total_count'] / meta['total_pages'].to_f).round
     end
 
   end
