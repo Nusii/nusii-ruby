@@ -111,7 +111,7 @@ Any ResponseObject instance also has the methods `next_page` and `prev_page` whi
 
 ### Getting a single resource
 
-Use .get to retrieve a single resource
+Use `.get` to retrieve a single resource
 
 ```ruby
 > Nusii::Section.get 309405
@@ -191,10 +191,16 @@ Just as happens with creation, a resource can be deleted by a class method `.des
 
 ### Sending a proposal
 
+With any `Proposal` object you can use the method `#send_proposal`. You need to pass at least the email of the client you want the existing proposal sent to. Please [refer to the API](https://developer.nusii.com/#send-a-proposal) for more information.
+
+```ruby
+> proposal.send_proposal(:email => 'lucas.tazmily@myclient.com')
+=> {"status"=>"pending", "sent_at"=>"2017-12-11T12:37:12.593Z", "sent_at_in_ms"=>1512995832000, "sender_id"=>nil, "sender_name"=>nil}
+```
 
 ### Retrieving account information
 
-# Use `Account.me` to get the information from your account
+Use `Account.me` to get the information from your account
 
 ```ruby
 > Nusii::Account.me
