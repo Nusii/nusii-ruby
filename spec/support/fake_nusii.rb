@@ -16,7 +16,7 @@ class FakeNusii < Sinatra::Base
   end
 
   # Proposals
-  post '/api/v2/proposals/:id/send_proposal' do
+  put '/api/v2/proposals/:id/send_proposal' do
     json_response 201, "proposals_send_proposal_ok_response.json"
   end
 
