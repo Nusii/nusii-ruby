@@ -13,7 +13,7 @@ module Nusii
     private
 
       def response
-        @response ||= connection.post resource_path, params.to_json
+        @response ||= connection.put resource_path, params.to_json
       end
 
       def build_ok_response
