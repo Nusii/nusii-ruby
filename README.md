@@ -2,7 +2,7 @@
 
 # Nusii
 
-Ruby library for the [Nusii API](https://developer.nusii.com/#get-all-webhook-endpoints)
+Ruby library for the [Nusii API](https://developer.nusii.com)
 
 ## Table of contents
 
