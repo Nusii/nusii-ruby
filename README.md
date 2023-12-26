@@ -282,7 +282,7 @@ There's another variable called `rate_limit_retry_after` that will store the amo
 * Nusii::Proposal.list
 * Nusii::Proposal.get
 
-#### Webhook Enpoints
+#### Webhook Endpoints
 
 * Nusii::WebhookEndpoint.list
 * Nusii::WebhookEndpoint.get
