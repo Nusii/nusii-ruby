@@ -277,10 +277,15 @@ There's another variable called `rate_limit_retry_after` that will store the amo
 * Nusii::Proposal#destroy
 * Nusii::Proposal#send_proposal
 
+#### Templates
+
+* Nusii::Template.list
+* Nusii::Template.get
+
 #### Proposal Activities
 
-* Nusii::Proposal.list
-* Nusii::Proposal.get
+* Nusii::ProposalActivity.list
+* Nusii::ProposalActivity.get
 
 #### Webhook Endpoints
 
