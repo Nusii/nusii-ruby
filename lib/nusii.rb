@@ -37,6 +37,7 @@ require 'nusii/line_item'
 require 'nusii/proposal'
 require 'nusii/proposal_activity'
 require 'nusii/section'
+require 'nusii/template'
 require 'nusii/webhook_endpoint'
 
 module Nusii

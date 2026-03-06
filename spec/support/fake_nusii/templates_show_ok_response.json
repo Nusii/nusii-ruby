@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": "42",
+    "type": "templates",
+    "attributes": {
+      "name": "Web Design Proposal",
+      "account_id": 3,
+      "created_at": "2024-01-15T10:30:00.000Z",
+      "public_template": false,
+      "dummy_template": false
+    }
+  }
+}
