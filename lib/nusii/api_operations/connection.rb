@@ -14,6 +14,7 @@ module Nusii
         conn.headers['Authorization'] = "Token token=#{Nusii.api_key}"
         conn.headers['User-Agent']     = Nusii.user_agent
         conn.headers['Content-Type']  = 'application/json'
+        conn.headers['Accept']        = 'application/json'
       end
     end
 
