@@ -15,6 +15,14 @@ RSpec.describe Nusii::NusiiError do
     it 'returns the right class' do
       expect(described_class.error_for(unauthorized_code)).to eq unauthorized_class_error
     end
+
+    it 'returns PaymentRequiredError for 402' do
+      expect(described_class.error_for(402)).to eq Nusii::PaymentRequiredError
+    end
+
+    it 'returns UnprocessableEntityError for 422' do
+      expect(described_class.error_for(422)).to eq Nusii::UnprocessableEntityError
+    end
   end
 
   describe '#to_s' do

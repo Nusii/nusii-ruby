@@ -21,11 +21,13 @@ module Nusii
       case status
       when 400 then BadRequestError
       when 401 then UnauthorizedError
+      when 402 then PaymentRequiredError
       when 403 then ForbiddenError
       when 404 then NotFoundError
       when 405 then MethodNotAllowedError
       when 406 then NotAcceptableError
       when 410 then GoneError
+      when 422 then UnprocessableEntityError
       when 429 then TooManyRequestsError
       when 500 then IntervalServerError
       when 503 then ServiceUnavailableError
@@ -36,11 +38,13 @@ module Nusii
 
   class BadRequestError < NusiiError; end
   class UnauthorizedError < NusiiError; end
+  class PaymentRequiredError < NusiiError; end
   class ForbiddenError < NusiiError; end
   class NotFoundError < NusiiError; end
   class MethodNotAllowedError < NusiiError; end
   class NotAcceptableError < NusiiError; end
   class GoneError < NusiiError; end
+  class UnprocessableEntityError < NusiiError; end
   class TooManyRequestsError < NusiiError; end
   class IntervalServerError < NusiiError; end
   class ServiceUnavailableError < NusiiError; end

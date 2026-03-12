@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+- Add `PaymentRequiredError` for HTTP 402 responses
+- Add `UnprocessableEntityError` for HTTP 422 responses
+
 ## 0.2.1
 
 - Add `Accept: application/json` header to API requests
